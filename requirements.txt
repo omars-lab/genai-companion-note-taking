@@ -1,0 +1,12 @@
+arrow
+notebook
+nbformat
+langchain
+langchain-openai
+langchain-community
+openai
+# https://streamlit.io/#install
+streamlit
+watchdog
+pandas
+numpy

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+OPENAI_API_SECRET_ID=$( \
+    lpass ls automation  \
+    | grep note-companion \
+    | egrep -E -o '\[id: ([0-9]+)\]' | egrep -E -o '[0-9]+' \
+)
+
+lpass show --notes ${OPENAI_API_SECRET_ID}
